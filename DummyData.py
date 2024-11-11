@@ -11,7 +11,7 @@ Faker.seed(13)
 ## !!! Note that "Email" and "First/Last Name" needs fix. 
 ## !!! Currently displays different first/last names that do not correlate with email
 
-def generate_fake_data(num_entries=100):
+def generate_dummy_data(num_entries=100):
     data={
         'First Name':[],
         'Last Name':[],
@@ -20,7 +20,10 @@ def generate_fake_data(num_entries=100):
         'Location':[],
         'Profession':[],
         'Company':[],
-        'Date':[]
+        'Date':[],
+        'Price':[],
+        'Hardware':[],
+        'Amount':[]
     }
 
     for _ in range(num_entries):
@@ -32,11 +35,14 @@ def generate_fake_data(num_entries=100):
         data['Profession'].append(fake.job())
         data['Company'].append(fake.company())
         data['Date'].append(fake.date_between(start_date='-1y', end_date='+1y'))
+        data['Price'].append(fake.pyint())
+        data['Hardware'].append(fake.numerify(text='Laptop Intel Core i%-%%##K'))
+        data['Amount'].append(fake.random_digit())
 
     return data
     
 #Generate the data
-dummy_data = generate_fake_data(100)
+dummy_data = generate_dummy_data(100)
 
 #Create a DataFrame
 df_dummy_data = pd.DataFrame(dummy_data)
