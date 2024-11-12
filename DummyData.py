@@ -8,8 +8,7 @@ fake = Faker()
 Faker.seed(13)
 
 # Dictionary with 100 entries of data
-## !!! Note that "Email" and "First/Last Name" needs fix. 
-## !!! Currently displays different first/last names that do not correlate with email
+## !!! Note that "Email" and "First/Last Name" currently do not correlate with email
 
 def generate_dummy_data(num_entries=100):
     data={
@@ -36,7 +35,7 @@ def generate_dummy_data(num_entries=100):
         data['Company'].append(fake.company())
         data['Date'].append(fake.date_between(start_date='-1y', end_date='+1y'))
         data['Price'].append(fake.pyint())
-        data['Hardware'].append(fake.numerify(text='Laptop Intel Core i%-%%##K'))
+        data['Hardware'].append(fake.numerify(text='Laptop Intel Core i%'))
         data['Amount'].append(fake.random_digit())
 
     return data
