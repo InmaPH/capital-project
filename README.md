@@ -1,6 +1,6 @@
 # capital-project
-![image](https://github.com/user-attachments/assets/808c29c3-1736-4ff9-bc12-ce54dcd776cf)
 
+![Capital Expenses - Dummy Data](https://github.com/user-attachments/assets/7de42583-df8f-49f6-80e8-eabfdaaaab21)
 
 Using dummy data, this project aims to analyse hardware spending.
 
