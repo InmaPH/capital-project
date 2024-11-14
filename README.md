@@ -1,4 +1,6 @@
 # capital-project
+![image](https://github.com/user-attachments/assets/9185cbc5-3be7-41db-a3ab-595bcd2e7ded)
+
 Using dummy data, this project aims to analyse hardware spending.
 
 Packages used: Faker
