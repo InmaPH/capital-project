@@ -1,5 +1,6 @@
 # capital-project
-![image](https://github.com/user-attachments/assets/9185cbc5-3be7-41db-a3ab-595bcd2e7ded)
+![image](https://github.com/user-attachments/assets/808c29c3-1736-4ff9-bc12-ce54dcd776cf)
+
 
 Using dummy data, this project aims to analyse hardware spending.
 
